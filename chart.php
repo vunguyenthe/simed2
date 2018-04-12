@@ -348,6 +348,7 @@
 	  $result = mysqli_query($db, $user_check_query);
 	  $user = mysqli_fetch_assoc($result);
 	  $duration = $month[0];
+	  $query = '';
 		if ($user) { // login ok
 				//update
 			$query = "UPDATE energy set room = '$roomSelected', month= '$duration', savedEnergy = '$savedEnergy'";
