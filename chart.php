@@ -42,6 +42,7 @@
 
 	if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST") {
 	  $configFile = $_FILES['configFile']['name'];
+	  $dataCsvFile = $_FILES['dataCsvFile']['name'];
 	  if(strlen($configFile)) {
 		$size = $_FILES['configFile']['size'];
 		list($txt, $ext) = explode(".", $configFile);
@@ -69,7 +70,6 @@
 	  }
 	  if(strlen($dataCsvFile)) {
 		list($txt, $ext) = explode(".", $dataCsvFile);
-
 		if(in_array($ext,$valid_formats)) {
 		  $size = $_FILES['dataCsvFile']['size'];
 		  if($size<(1024*1024)) // Image size max 1 MB
