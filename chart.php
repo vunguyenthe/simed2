@@ -354,7 +354,6 @@
 		}
 		else {
 			$query = "INSERT INTO energy (room, csv_file_name, month, savedEnergy) VALUES('$roomSelected', '$csv_file_name', '$duration', '$savedEnergy')";
-			mysqli_query($db, $query);			
 		}
 		mysqli_query($db, $query);	
 		mysqli_free_result($result);		
