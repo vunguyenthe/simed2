@@ -41,7 +41,7 @@
 	$valid_formats = array("csv");
 
 	if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST") {
-	  $dataCsvFile = $_FILES['dataCsvFile']['name'];
+	  $configFile = $_FILES['configFile']['name'];
 	  if(strlen($configFile)) {
 		$size = $_FILES['configFile']['size'];
 		list($txt, $ext) = explode(".", $configFile);
