@@ -65,7 +65,7 @@
 		
 		//send next 
 		
-		$email = 'robert.raufer@gmail.com';
+		$email = 'Ussai.silvia@gmail.com';
 		$params = array(
 			'email' => $email,
 			'content' => $content,
