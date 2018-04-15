@@ -20,7 +20,7 @@
 	if($email != '' && $content != '') {
 		
 		{	
-			$url = 'http://simedjava-simedjava.7e14.starter-us-west-2.openshiftapps.com/spring-mvc-angularjs/api/sendMail/';
+			$url = 'http://simed5-simedtrieste.7e14.starter-us-west-2.openshiftapps.com/spring-mvc-angularjs/api/';
 			$params = array(
 				'email' => $email,
 				'content' => $content,
