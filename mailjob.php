@@ -35,7 +35,7 @@
 		mysqli_free_result($result);
 
 		$content = "Respectful Ms. Silvia Ussai, please find your weekly report. Summary energy compliance: ".$savedEnergy."%. Best regards, Atisan";
-		$url = 'http://simed5-simedtrieste.7e14.starter-us-west-2.openshiftapps.com/spring-mvc-angularjs/api/sendMail/';
+		$url = 'http://45.117.170.211:8080/simedtrieste/api/sendMail/';
 		$email = 'vunguyenthe1976@gmail.com';
 		$params = array(
 			'email' => $email,
